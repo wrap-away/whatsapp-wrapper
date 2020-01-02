@@ -1,0 +1,13 @@
+cffi==1.13.2
+cryptography==2.8
+numpy==1.18.0
+protobuf==3.11.2
+pycparser==2.19
+python-axolotl==0.2.3
+python-axolotl-curve25519==0.4.1.post2
+python-dateutil==2.8.1
+python-magic==0.4.15
+selenium==3.141.0
+six==1.13.0
+urllib3==1.25.7
+webwhatsapi==2.0.3
