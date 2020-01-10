@@ -10,6 +10,7 @@ def get_response(last_message, domain_name="http://localhost:8000/"):
             4. Video Conference
             5. Analytics
             6. Donation
+            7. Change Language To Local Language
         '''
 
     if any([True for word in small_case_message.split(" ") if word in ["1", "syllabus"]]):
@@ -29,5 +30,6 @@ def get_response(last_message, domain_name="http://localhost:8000/"):
 
     if any([True for word in small_case_message.split(" ") if word in ["6", "donation"]]):
         return "Donating details can be found at: {}crowdsourcing".format(domain_name)
+
 
     return False
