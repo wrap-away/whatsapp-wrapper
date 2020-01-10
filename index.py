@@ -2,7 +2,7 @@ from utils import get_response
 from time import sleep
 from whatsapp_wrapper import WhatsappWrapper
 
-print("Starting selenium instance and logging to whatsapp-web...")
+print("Starting selenium instance and logging to whatsap00p-web...")
 profile_path = "/home/slapbot/.mozilla/firefox/xf0clnwz.whatsapp-user"
 ww = WhatsappWrapper(profile_path)
 
