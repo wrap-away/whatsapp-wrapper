@@ -12,6 +12,7 @@ test_chat = chats[0]
 
 global_cache = {}
 print("Ready!")
+language = "english"
 
 
 def loop():
@@ -27,13 +28,14 @@ def loop():
     print("A new message is found.")
     global_cache[last_message.timestamp.timestamp()] = 1
 
-    resp = get_response(last_message.content)
+    resp, language = get_response(last_message.content, language)
     if resp is not False:
         print("Replying back the response as {}".format(resp))
         test_chat.send_message(resp)
 
     print("Message was an incorrect input.")
+    return language
 
 while True:
-    loop()
+    language = loop()
     sleep(2)
