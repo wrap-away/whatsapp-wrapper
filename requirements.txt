@@ -1,5 +1,5 @@
 cffi==1.13.2
-cryptography==2.8
+cryptography==3.2
 numpy==1.18.0
 protobuf==3.11.2
 pycparser==2.19
